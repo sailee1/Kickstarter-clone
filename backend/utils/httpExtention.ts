@@ -4,7 +4,7 @@ export default class HttpException extends Error {
     error: string | null
 
 
-constructor (message: string, status: number, error: string | null){
+constructor (message: string, status: number, error?: string | null){
     super(message)
     this.status = status
     this.message = message 
