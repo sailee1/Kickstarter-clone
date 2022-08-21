@@ -1,5 +1,5 @@
 import { ProjectType } from "../types/projectTypes";
-import HttpException from "../utils/httpExtention";
+import HttpException from "../utils/httpException";
 
 export function sanitizeProject(project: ProjectType): ProjectType {
     let sanitizedProject = <ProjectType>{};

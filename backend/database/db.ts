@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import { MONGO_URI } from '../utils/config';
-import HttpException from '../utils/httpExtention';
+import HttpException from '../utils/httpException';
 
 export const connectDB = async () => {
     if (!MONGO_URI) {

@@ -1,4 +1,4 @@
-import * as express from 'express'
+import express from 'express'
 import { errorHandler } from './middleware/errorMiddleware'
 import {PORT} from './utils/config' 
 import * as Colors from 'colors.ts'
@@ -11,6 +11,7 @@ const app = express()
 app.use(express.json())
 
 app.use('/api/projects', require('./routes/projectRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 app.use(errorHandler)
 
